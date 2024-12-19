@@ -1,0 +1,293 @@
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding-left: 64px;
+  padding-right: 64px;
+  position: relative;
+}
+
+h1, h2, h3 {
+  font-family: 'Libre Baskerville', serif;
+  color: #03045E;
+}
+
+
+
+h1 {
+    font-size: 62px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}   
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #03045E;
+    margin-top: 0;
+}
+
+p.small {   
+    font-size: 14px;
+}
+
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 64px;
+}
+.site-title {
+    margin-bottom: 40px;
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+}
+.header-images {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    gap: 16px;
+}
+.header-images img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#second-image {
+    /* Add specific styles for the second image */
+width: 60%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 24px 40px;
+    background-color: #03045E;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 18px;
+    line-height: 20px;
+
+}
+
+.btn.small {
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    padding-left: 40px;
+}
+
+.cta-content h2 {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.cta-content p {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    color: #6F6F6F;
+}
+
+section {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+
+
+#main-cta {
+    margin-top: 16px;
+    background-color: white;
+    border-radius: 12px;
+    padding-left: 280px;
+    margin-left: 20px;
+}
+
+.badge {
+    top: -120px;
+    left: -20px;
+    position: absolute;
+    display: flex; /* Change to flex */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-image: url('img/star.svg');
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+}
+
+.badge-content {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center; /* Center content */
+    flex-direction: column;
+    color: #03045E;
+}
+
+
+.badge .price {
+    font-size: 120px;
+    line-height: 120px;
+    font-weight: 600;
+}
+
+.badge-title {
+    margin: 0;
+}
+
+#review {
+    margin-bottom: ;
+}
+
+.review-content {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+
+.review-content .name {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 16px;
+}
+
+#services {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.service {
+    flex: 1;
+    background-color: white;
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.service h3 {
+    margin-top: 16px;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.service p {
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+/* Add media query */
+@media (max-width: 1200px) {
+    #services {
+        flex-direction: column;
+    }
+
+    .site-title {
+        margin-bottom: 16px;;
+    }
+
+    .service {
+        margin-bottom: 16px;
+    }
+    .header-images img {
+        width: 100%;
+    }
+
+    #second-image {
+        display: none;
+    }
+    body {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 16px 40px;
+    }
+    .cta-content {
+        flex-direction: column;
+        padding: 16px;
+        align-items: baseline;
+    }
+
+    .cta-content .button {
+        order: 1;
+        margin-left:  auto;
+        margin-bottom: 16px;
+    }
+
+    .cta-content .text {
+        order: 2;
+    }
+    #main-cta {
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .badge {
+        top: -120px;
+        left: 0px;
+        height: 200px;
+        width: 200px;
+    }
+    .badge .price {
+        font-size: 80px;
+        line-height: 80px;
+    }
+    .badge h3 {
+        font-size: 16px;
+    }
+}
