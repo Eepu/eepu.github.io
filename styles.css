@@ -17,6 +17,12 @@ h1, h2, h3 {
 }
 
 
+a {
+    color: #03045E;
+    font-weight: 500;
+}
+
+
 
 h1 {
     font-size: 62px;
