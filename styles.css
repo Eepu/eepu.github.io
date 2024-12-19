@@ -24,6 +24,7 @@ h1 {
 
 h2 {
     font-size: 32px;
+    margin-bottom: 16px;
 }
 
 h3 {
@@ -223,10 +224,45 @@ section {
     margin-top: 24px;
 }
 
+
+#about {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about img {
+    height: auto;
+    border-radius: 12px;
+    margin-left: 40px;
+}
+#about .text {
+    max-width: 400px;
+}
+
 /* Add media query */
 @media (max-width: 1200px) {
+
+    .container {
+        margin-top: 32px;
+    }
     #services {
         flex-direction: column;
+    }
+    #about {
+        flex-direction: column;
+    }
+    #about img {
+        order: 1;
+        margin-left: 0;
+        width: 140px;
+    }
+
+    #about .text {
+        order: 2;
     }
 
     .site-title {
@@ -289,5 +325,9 @@ section {
     }
     .badge h3 {
         font-size: 16px;
+    }
+
+    .service {
+        padding: 24px;;
     }
 }
