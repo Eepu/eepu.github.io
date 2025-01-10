@@ -1,3 +1,28 @@
+html {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('fonts/LibreBaskerville-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('fonts/LibreBaskerville-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('fonts/SourceSans3-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 700;
+    font-style: normal;
+}
+
 body {
   font-family: 'Source Sans 3', sans-serif;
   margin: 0;
@@ -12,9 +37,11 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'LibreBaskerville', serif;
   color: #03045E;
+  font-weight: 600;
 }
+
 
 
 a {
@@ -55,7 +82,7 @@ p.small {
 
 
 .container {
-    max-width: 1600px;
+    max-width: 1440px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -180,9 +207,6 @@ section {
     margin: 0;
 }
 
-#review {
-    margin-bottom: ;
-}
 
 .review-content {
     text-align: center;
@@ -227,6 +251,10 @@ section {
     margin-bottom: 0;
 }
 
+.service .price a {
+    font-weight: 400;
+}
+
 .cta-container {
     display: flex;
     flex-direction: row;
@@ -251,7 +279,7 @@ section {
     margin-left: 40px;
 }
 #about .text {
-    max-width: 400px;
+    max-width: 460px;
 }
 
 #contact iframe{
@@ -274,6 +302,24 @@ section {
     margin-bottom: 40px;
     display: flex;
     overflow: hidden;
+}
+
+#services {
+    margin-bottom: 16px;
+}
+.other-cta {
+    padding: 4px 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+    margin-top: 0px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.other-cta h3 {
+    font-size: 20px;
 }
 
 
