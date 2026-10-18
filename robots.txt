@@ -1,4 +1,25 @@
 User-agent: *
-
+Allow: /
 Disallow: /CNAME
 Disallow: /.gitignore
+Disallow: /susanna/
+
+# AI-hakukoneet ja -avustajat ovat tervetulleita
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bingbot
+User-agent: CCBot
+Allow: /
+Disallow: /CNAME
+Disallow: /.gitignore
+Disallow: /susanna/
+
+Sitemap: https://xn--hammaslkripyhranta-rtbabf.fi/sitemap.xml
